@@ -149,3 +149,27 @@ git push origin main
 We acknowledge the transformative potential of LLMs in generating code; however, we are still in the nascent stages of understanding how to embed LLMs in developer workflows to write code more efficiently while maintaining quality. Therefore, we will not be teaching students directly how to use LLMs to develop web applications.
 
 As part of this class, we do encourage students to experiment with LLM services such as OpenAI's ChatGPT to generate source code for MPs. If LLMs are used to generate code for an MP, students must (1) submit their chatlogs along with their source code, and (2) answer survey questions related to their experience using LLMs in the grading form. Failure to do this will be a violation of the academic integrity policy of this course.
+
+## MP2 Submission — AIC Collection Explorer
+
+**Live site:** https://partialderivative.github.io/mp2/
+
+**API:** [Art Institute of Chicago API](https://api.artic.edu/docs/) (public-domain artworks, images via IIIF)
+
+### Features
+- List view: search-as-you-type by title/artist; sort by title, artist, or year; ascending/descending
+- Gallery view: image grid with multi-select filters (artwork type, department)
+- Detail view: route `/artworks/:id`; previous/next buttons (and ← → keys) cycle through the current list or gallery order
+
+### Sources & References
+- Art Institute of Chicago API documentation — https://api.artic.edu/docs/
+- React documentation — https://react.dev/learn
+- React Router documentation — https://reactrouter.com/
+- Axios documentation — https://axios-http.com/
+- Vite documentation (CSS Modules) — https://vite.dev/guide/features.html#css-modules
+- Normalize.css — https://necolas.github.io/normalize.css/
+
+### LLM Usage
+Code in this project was developed with assistance from Claude.
+The full chat log is included in this submission.
+Link: https://claude.ai/share/2c934503-5d6a-4a3d-99a5-784cde26b8c5
