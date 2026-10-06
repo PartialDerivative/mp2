@@ -1,0 +1,136 @@
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .back {
+    padding: 0.5rem 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    background: var(--color-surface);
+    color: var(--color-ink);
+    cursor: pointer;
+  }
+  
+  .back:hover {
+    border-color: var(--color-ink);
+  }
+  
+  .position {
+    color: var(--color-muted);
+    font-size: 0.9rem;
+  }
+  
+  .status {
+    padding: 1rem 0;
+    color: var(--color-muted);
+  }
+  
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+  
+  .imageWrap {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image {
+    max-height: 70vh;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  .noImage {
+    padding: 4rem 1rem;
+    color: var(--color-muted);
+  }
+  
+  .title {
+    margin: 0 0 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .artist {
+    margin: 0 0 1.5rem;
+    font-size: 1.15rem;
+    color: var(--color-accent);
+  }
+  
+  .facts {
+    margin: 0 0 1.5rem;
+    border-top: 1px solid var(--color-border);
+  }
+  
+  .fact {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    gap: 1rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .fact dt {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  
+  .fact dd {
+    margin: 0;
+  }
+  
+  .external {
+    font-weight: 600;
+  }
+  
+  .pager {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .pagerButton {
+    padding: 0.75rem 1.4rem;
+    border: none;
+    border-radius: var(--radius);
+    background: var(--color-ink);
+    color: var(--color-paper);
+    cursor: pointer;
+  }
+  
+  .pagerButton:hover:not(:disabled) {
+    background: var(--color-accent);
+  }
+  
+  .pagerButton:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+  
+  .hint {
+    color: var(--color-muted);
+    font-size: 0.85rem;
+  }
+  
+  @media (max-width: 800px) {
+    .layout {
+      grid-template-columns: 1fr;
+    }
+  
+    .hint {
+      display: none;
+    }
+  }

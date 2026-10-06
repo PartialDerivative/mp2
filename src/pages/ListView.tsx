@@ -123,6 +123,7 @@ export default function ListView() {
             <li key={a.id}>
               <Link
                 to={`/artworks/${a.id}`}
+                state={{ fromApp: true }}
                 className={styles.item}
                 onClick={() => setNavList(shownIds)}
               >
